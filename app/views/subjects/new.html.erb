@@ -1,0 +1,10 @@
+<% provide :title, "Add a new subject!" %>
+
+<div class="container" style="padding-top:60px;">
+<%= form_for Subject.new do |f| %>
+  <%= f.label :subject %>
+  <%= f.text_field :subject_name, :autofocus => true %>
+
+  <%= f.submit "Add", :class => 'btn btn-primary' %>
+<% end %>
+</div>
